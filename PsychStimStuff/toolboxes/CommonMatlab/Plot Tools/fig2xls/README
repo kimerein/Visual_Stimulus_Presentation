@@ -1,0 +1,48 @@
+FIG2XLS is Windows only. It has been tested recently with:
+
+	MATLAB 5.3.1
+	MATLAB 6.1
+	MATLAB 6.5 (with COM patch)
+	Excel 2000
+	Win2000
+
+However, it is expected to work with some earlier versions of MATLAB, Excel
+and Windows.
+
+In order to use FIG2XLS with MATLAB 6.5 you must must fix certain COM issues 
+(otherwise known as bugs). The instructions that follow are taken from TMW's 
+response to a segmentation violation report.
+
+Tom L. Davis
+tomldavis@attbi.com
+
+
+
+
+COM patch for 6.5:
+------------------
+
+There are several issues in the COM interface that was shipped with MATLAB 
+6.5 (R13).  Please see the following problem descriptions.  If you are 
+running into a similar issue, you should replace the specified updated
+files.
+
+Fixes for all the problems listed below have been addressed in updated 
+versions of comcli.dll and newprogid.m.  These updated versions should 
+replace the current versions in your MATLAB installation.  Both are 
+available for download from our FTP site at the following location:
+
+ftp://ftp.mathworks.com/pub/tech-support/solutions/s33520/
+
+The file newprogid.m, should be downloaded to the following directory:
+
+$MATLAB\toolbox\matlab\winfun\comcli\private
+
+and comcli.dll should be downloaded to
+
+$MATLAB\bin\win32
+
+(where $MATLAB is the root directory where MATLAB installed)
+
+After downloading the files, you must restart MATLAB.
+

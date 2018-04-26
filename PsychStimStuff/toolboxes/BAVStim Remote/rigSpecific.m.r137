@@ -1,0 +1,18 @@
+
+
+PSC_moviedirpath = '\\132.239.203.21\VStimConfig\movies\';
+PSC_paramdirpath = '\\132.239.203.21\VStimConfig\';
+PSC_logdirpath = 'C:\Vstim\VStimLog\';
+PSC_DAQ_PC_IP = '132.239.203.32'; %BA
+
+PSC_REMOTECONTROL_REMOTEPC_IP = '132.239.203.21'; %BA
+PSC_REMOTECONTROL_REMOTEPC_PORT = '3458'; %BA
+PSC_REMOTECONTROL_LOCALPC_PORT = '3458'; %BA
+
+% Gamma calibration
+% if none set to empty. this will use flat look-up table)
+PSC_GAMMATABLE = ''; %E:\Documents and Settings\Bassam\My Documents\Matlab toolboxes\CalibrateGamma\inv_gamma_clut.mat';
+
+parentfolder(PSC_moviedirpath,1);
+parentfolder(PSC_paramdirpath,1);
+parentfolder(PSC_logdirpath,1);

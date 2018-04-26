@@ -1,0 +1,10 @@
+
+
+PSC_moviedirpath = 'E:\Documents and Settings\Bassam\My Documents\Matlab toolboxes\VStimConfig\movies';
+PSC_paramdirpath = 'E:\Documents and Settings\Bassam\My Documents\Matlab toolboxes\VStimConfig\';
+PSC_logdirpath = 'E:\Documents and Settings\Bassam\My Documents\Matlab toolboxes\VStimLog\';
+PSC_DAQ_PC_IP = '132.239.203.32'; %BA
+
+% Gamma calibration
+% if none set to empty. this will use flat look-up table)
+PSC_GAMMATABLE = 'E:\Documents and Settings\Bassam\My Documents\Matlab toolboxes\CalibrateGamma\inv_gamma_clut.mat';
